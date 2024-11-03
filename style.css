@@ -4,8 +4,11 @@
 }
 body{
     background-color:rgb(255, 239, 205);
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-    
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     justify-content: center;
+          flex-wrap: wrap;
+          padding: 20px;
+   
 }
 header{
     display: flex;
@@ -46,6 +49,9 @@ nav ul li{
     margin-top: 50px;
     
  } 
+ .imagenes_uñas{
+    margin: 150px;
+ }
 
  footer {
     background-color: 
@@ -64,4 +70,117 @@ rgba(224, 145, 50, 0.705);
     width: 30px;
     margin: 10px;
 }
+
+/*Cards*/
+.card {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: inline-block;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
+    margin: 40px;
+    margin-top: 80px;
+    padding: 20px;
+    width: 330px;
+    text-align: center;
+       
+    
+}
+.card h3 {
+    margin: 10px 0;
+    color: #333;
+}
+.card p {
+    color: #666;
+}
+
+/*GRIDS*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    gap: 16px;
+    padding: 20px;
+}
+.grid-item img {
+    width: 100%; /* Hace que la imagen ocupe todo el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 120px; /* Esquinas redondeadas */
+}
+
+.titulo{
+    background-color: rgba(224, 145, 50, 0.705);
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+/*Formulario*/
+.form-container {
+    padding:10%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+label {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: x-large;
+    
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+form{
+    font-size: x-large;
+    
+
+}
+
+/* Media Queries */
+@media (min-width: 500px) {
+    .form-container {
+        width: 80%; 
+    }
+}
+
+@media (min-width: 800px) {
+    .form-container {
+        width: 80%; 
+    }
+}
+
 

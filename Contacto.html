@@ -4,23 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Formulario de Contacto</h1>
-<form action="/submit" method="post">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required><br><br>
+    <header><img src="imagenes/Logo-azula.jpeg" alt="Logo azula"></header>
+    <nav>
+        <ul>
+            <li><a href="/index.html"><b>Inicio</b></a></li>
+            <li><a href="/Quienes_somos.html"><b>Quienes somos</b></a></li>
+            <li><a href="/Servicios.html"><b>Nuestros servicios</b></a></li>
+            <li><a href="/Contacto.html"><b>Contacto</b></a></li>
+        </ul>
+    </nav>
+    <h1 class="titulo">Formulario de Contacto</h1>
+    <div class="form-container">
 
-    <label for="email">Correo Electrónico:</label>
-    <input type="email" id="email" name="email" required><br><br>
+        <form action="https://formspree.io/" method="get">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
 
-    <label for="mensaje">Mensaje:</label><br>
-    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
 
-    <label for="telefono">Teléfono:</label>
-    <input type="tel" id="telefono" name="telefono"><br><br>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
 
-    <input type="submit" value="Enviar">
-</form>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <footer>
+        <h4>
+            <div class="footer-content">
+                <p>Síguenos en nuestras redes sociales:</p>
+                <a href="https://www.instagram.com/azula_nails" target="_blank">
+                    <img src="/icono-insta.png" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://wa.me/1138854524" target="_blank">
+                    <img src="icono-whatsap.png" alt="WhatsApp" class="social-icon">
+                </a>
+            </div>
+            Azula Nails 2024 ®
+        </h4>
+    </footer>
 </body>
 </html>
