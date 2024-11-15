@@ -15,25 +15,31 @@
 </head>
 
 <body>
-    <header><img src="imagenes/Logo-azula.jpeg" alt="Logo azula"></header>
-    <nav>
-        <ul>
-            <li><a href="index.html"><b>Inicio</b></a></li>
-            <li><a href="Quienes_somos.html"><b>Quienes somos</b></a></li>
-            <li><a href="Servicios.html"><b>Nuestros servicios</b></a></li>
-            <li><a href="Contacto.html"><b>Contacto</b></a></li>
-        </ul>
-    </nav>
+    <header><img src="imagenes/Logo-azula.jpeg" alt="Logo azula">
+        <nav class="navbar">
+          <div class="logo">
+            <a href="#">Azula Nails</a>
+          </div>
+          <input type="checkbox" id="menu-toggle" class="menu-toggle">
+          <label for="menu-toggle" class="menu-icon">&#9776;</label>
+          <ul class="navbar-menu">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Quienes somos</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
     <main>
 
-    <h1>Servicio de manicuria y belleza de uñas</h1>
+    <h1 id="Slogan">Servicio de manicuria y belleza de uñas</h1>
     <section class="imagenes_uñas">
      <img width="350" src="imagenes/Uñas1.jpeg" alt="uñas1">
      <img width="350" src="imagenes/Uñas2.jpeg" alt="uñas2">
      <img width="350" src="imagenes/Uñas3.jpeg" alt="uñas3">
      <img width="350" src="imagenes/uñas4.jpeg" alt="uñas4">
     </section>
-</ol>
+
     <h2>Que servicios ofrecemos?</h2>
     <p><ul>
         <li>• Uñas esculpidas • </li>
@@ -42,7 +48,7 @@
         <li>• Nails Art • </li>
         <li>• Belleza de manos • </li>
     </ul></p>
-    <h2>Comentarios de nuestras clientas:</h2>
+    <h2 id="comentarios">Comentarios de nuestras clientas:</h2>
     <div class="card">
         <h3>María L.</h3>
         <p>“¡Excelente servicio de manicura! Las uñas me quedaron perfectas y duraron mucho tiempo.”</p>
