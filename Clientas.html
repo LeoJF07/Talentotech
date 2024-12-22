@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="titulo">Lista de Clientas de Azula</h1>
+    <section class="usuarias">
+    <table class="tabla" border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+            </tr>
+        </thead>
+        <tbody id="personas"></tbody>
+    </table>
+</section>
+
+    <script>
+        // Array de objetos
+        const personas = [
+            { nombre: "Ana", edad: 28, ciudad: "Ciudadela" },
+            { nombre: "Karina", edad: 35, ciudad: "Belgrano" },
+            { nombre: "Laura", edad: 22, ciudad: "Moron" },
+            { nombre: "Romina", edad: 40, ciudad: "Lanus" }
+        ];
+
+        // Obtener la referencia del tbody donde se insertarán las filas
+        const tbody = document.getElementById("personas");
+
+        // Recorrer el array de objetos y agregar cada uno como una fila en la tabla
+        personas.forEach(persona => {
+            const row = document.createElement("tr");
+
+            const tdNombre = document.createElement("td");
+            tdNombre.textContent = persona.nombre;
+            row.appendChild(tdNombre);
+
+            const tdEdad = document.createElement("td");
+            tdEdad.textContent = persona.edad;
+            row.appendChild(tdEdad);
+
+            const tdCiudad = document.createElement("td");
+            tdCiudad.textContent = persona.ciudad;
+            row.appendChild(tdCiudad);
+
+            tbody.appendChild(row);
+        });
+    </script>
+</body>
+</html>

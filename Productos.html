@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="Productosenventa">Productos en Venta</title>
+    <style>   
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 30px;
+            background-color: rgb(255, 239, 205);
+            font-size: 24px;
+        }
+
+        h1{
+            font-size: 50px;
+            display: inline;
+            padding: 10px;
+            margin: 20px;
+        } 
+
+        h2 a{
+            font-size: 15px;
+            color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: rgba(224, 145, 50, 0.705);
+            display: inline;
+            padding: 10px;
+    border-radius: 10px;
+        }
+
+        .product {
+            border: 1px solid #000000;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px;
+            display: inline-block;
+            width: 200px;
+        }
+        .product img {
+            max-width: 100%;
+        }
+        .cart {
+            margin-top: 30px;
+            border: 1px solid #000000;
+            padding: 15px;
+            max-width: 250px;
+        }
+    </style>
+</head>
+<body>
+<h2><a href="index.html">Volver atras</a></h2>
+<h1>Productos en Venta</h1>
+<div id="productList">
+    <div class="product">
+        <img src="imagenes/01.jpg" alt="Producto 1">
+        <h3>Torno Keila</h3>
+        <p>$40000.00</p>
+        <button onclick="addToCart('Producto 1', 10.00)">Agregar al Carrito</button>
+    </div>
+    <div class="product">
+        <img src="imagenes/02.jpg" alt="Producto 2">
+        <h3>Base y Top</h3>
+        <p>$20000.00</p>
+        <button onclick="addToCart('Producto 2', 15.00)">Agregar al Carrito</button>
+    </div>
+    <div class="product">
+        <img src="imagenes/03.jpg" alt="Producto 3">
+        <h3>Lampara</h3>
+        <p>$30000.00</p>
+        <button onclick="addToCart('Producto 3', 20.00)">Agregar al Carrito</button>
+    </div>
+    <div class="product">
+        <img src="imagenes/04.jpg" alt="Producto 4">
+        <h3>Lima</h3>
+        <p>$10000.00</p>
+        <button onclick="addToCart('Producto 4', 25.00)">Agregar al Carrito</button>
+    </div>
+</div>
+
+<div class="cart">
+    <h3>Carrito de Compras</h3>
+    <ul id="cartList"></ul>
+    <p id="total">Total: $0.00</p>
+</div>
+<script src="prueba.js"></script>
+</body>
+</html>
